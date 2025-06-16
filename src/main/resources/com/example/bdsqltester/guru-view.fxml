@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="479.0" style="-fx-background-color: #D4E0E9;" stylesheets="@style/guru-styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.GuruController">
+   <children>
+      <AnchorPane layoutX="83.0" layoutY="53.0" prefHeight="430.0" prefWidth="313.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);">
+         <children>
+            <VBox layoutX="10.0" layoutY="5.0" prefHeight="38.0" prefWidth="293.0">
+               <children>
+                  <Label fx:id="namaUser" prefHeight="28.0" prefWidth="277.0">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="318.0" mnemonicParsing="false" onAction="#OnLogoutClick" prefHeight="83.0" prefWidth="262.0" style="-fx-background-color: #FF6347;" styleClass="modern-button" stylesheets="@style/guru-styles.css" text="Logout" textFill="WHITE" />
+            <Line endX="311.9999694824219" endY="48.9999885559082" startX="-1.52587890625E-5" startY="48.9999885559082" strokeWidth="2.0" />
+            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="207.0" mnemonicParsing="false" onAction="#OnInputNilaiClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Jadwal Mengajar" />
+            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="85.0" mnemonicParsing="false" onAction="#OnInputNilaiClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Input Nilai Siswa" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

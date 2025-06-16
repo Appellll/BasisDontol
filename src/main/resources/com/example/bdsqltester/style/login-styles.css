@@ -1,0 +1,75 @@
+/* CLASS BARU UNTUK TOMBOL DENGAN UKURAN FORM */
+.form-button {
+  /* Mengambil Ukuran dari .form-input */
+  -fx-pref-width: 149px;
+  -fx-pref-height: 25px;
+
+  /* Mengambil Tampilan dari .modern-button */
+  -fx-padding: 0; /* Padding di-reset karena ukuran sudah spesifik */
+  -fx-background-color: #ECEFF1;
+  -fx-text-fill: #2D3748;
+  -fx-border-color: #E2E8F0;
+  -fx-border-width: 1px;
+  -fx-border-radius: 8px;
+  -fx-background-radius: 8px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 6, 0, 1, 2);
+  -fx-font-family: 'Segoe UI', sans-serif;
+  -fx-font-size: 14px; /* Ukuran font disesuaikan agar pas dengan tinggi tombol */
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+}
+
+/* Efek Hover untuk .form-button */
+.form-button:hover {
+  -fx-background-color: #F7FAFC;
+  -fx-border-color: #CBD5E0;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0, 0, 4);
+  -fx-translate-y: -2px;
+}
+
+/* Efek Pressed untuk .form-button */
+.form-button:pressed {
+  -fx-translate-y: 0px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 4, 0, 1, 1);
+}
+
+
+/* Gaya saat kursor mouse berada di atas tombol (hover).
+*/
+.modern-button:hover {
+  -fx-background-color: #F7FAFC; /* Warna latar sedikit berubah */
+  -fx-border-color: #CBD5E0; /* Warna border sedikit lebih gelap */
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0, 0, 4); /* Bayangan lebih jelas */
+  -fx-translate-y: -2px; /* Tombol sedikit terangkat ke atas */
+}
+
+/* Gaya saat tombol sedang ditekan (pressed).
+*/
+.modern-button:pressed {
+  -fx-translate-y: 0px; /* Mengembalikan posisi tombol agar terlihat ditekan */
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 4, 0, 1, 1); /* Bayangan kembali normal */
+}
+
+.login-button {
+  /* Gaya Dasar */
+  -fx-background-color: #8B5CF6; /* Warna ungu solid dari gambar Anda */
+  -fx-text-fill: white;
+  -fx-font-family: 'Segoe UI', sans-serif;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-background-radius: 8px; /* Sudut melengkung */
+  -fx-cursor: hand;
+  -fx-padding: 10px 24px; /* Atur padding sesuai keinginan */
+}
+
+/* EFEK HOVER UNTUK TOMBOL LOGIN */
+.login-button:hover {
+  -fx-background-color: #A78BFA; /* Warna ungu menjadi sedikit lebih terang */
+  -fx-effect: dropshadow(three-pass-box, rgba(139, 92, 246, 0.4), 10, 0, 0, 4); /* Bayangan yang sesuai dengan warna tombol */
+}
+
+/* EFEK PRESSED UNTUK TOMBOL LOGIN */
+.login-button:pressed {
+  -fx-background-color: #7C3AED; /* Warna ungu menjadi sedikit lebih gelap */
+  -fx-effect: none; /* Menghilangkan bayangan saat ditekan */
+}

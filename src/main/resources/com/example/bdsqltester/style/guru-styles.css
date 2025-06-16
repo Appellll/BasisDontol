@@ -1,0 +1,56 @@
+/* File: styles.css
+  Deskripsi: Stylesheet untuk aplikasi JavaFX
+*/
+
+/* Gaya untuk container/wadah tombol.
+  Properti seperti spasi lebih baik diatur langsung di VBox SceneBuilder.
+  Namun, padding bisa ditambahkan di sini untuk memberi jarak dari tepi.
+*/
+.button-container {
+  -fx-padding: 20px; /* Memberi jarak 20px di sekeliling container */
+  -fx-alignment: center; /* Menengahkan konten di dalamnya jika menggunakan VBox/HBox */
+}
+
+/* Gaya utama untuk setiap tombol.
+  Ini adalah tampilan default tombolnya.
+*/
+.modern-button {
+  /* Ukuran dan Jarak */
+  -fx-padding: 14px 24px;
+  -fx-pref-width: 300px; /* Lebar yang diinginkan, bisa disesuaikan */
+
+  /* Tampilan & Desain */
+  -fx-background-color: #ECEFF1;
+  -fx-text-fill: #2D3748;
+  -fx-border-color: #E2E8F0;
+  -fx-border-width: 1px;
+  -fx-border-radius: 8px; /* Sudut melengkung */
+  -fx-background-radius: 8px; /* Membuat background mengikuti sudut melengkung */
+
+  /* Efek Bayangan (Shadow) */
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 6, 0, 1, 2);
+
+  /* Tipografi (Font) */
+  -fx-font-family: 'Segoe UI', sans-serif;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+
+  /* Interaksi */
+  -fx-cursor: hand;
+}
+
+/* Gaya saat kursor mouse berada di atas tombol (hover).
+*/
+.modern-button:hover {
+  -fx-background-color: #F7FAFC; /* Warna latar sedikit berubah */
+  -fx-border-color: #CBD5E0; /* Warna border sedikit lebih gelap */
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0, 0, 4); /* Bayangan lebih jelas */
+  -fx-translate-y: -2px; /* Tombol sedikit terangkat ke atas */
+}
+
+/* Gaya saat tombol sedang ditekan (pressed).
+*/
+.modern-button:pressed {
+  -fx-translate-y: 0px; /* Mengembalikan posisi tombol agar terlihat ditekan */
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 4, 0, 1, 1); /* Bayangan kembali normal */
+}
