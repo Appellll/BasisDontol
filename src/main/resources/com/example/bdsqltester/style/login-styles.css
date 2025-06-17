@@ -73,3 +73,207 @@
   -fx-background-color: #7C3AED; /* Warna ungu menjadi sedikit lebih gelap */
   -fx-effect: none; /* Menghilangkan bayangan saat ditekan */
 }
+
+.custom-choice-box {
+    /* Warna Latar Belakang */
+    -fx-background-color: #F3F4F6; /* Warna abu-abu terang yang modern */
+    -fx-mark-color: #4B5563;      /* Warna panah dropdown menjadi abu-abu gelap */
+
+    /* Border */
+    -fx-border-color: #D1D5DB;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+/* GAYA UNTUK TEKS ITEM YANG TERPILIH (Perbaikan) */
+.custom-choice-box .label {
+    -fx-text-fill: #374151; /* Warna abu-abu gelap untuk teks yang terlihat */
+}
+
+.custom-choice-box:hover {
+    -fx-background-color: #E5E7EB; /* Warna latar menjadi sedikit lebih gelap */
+    -fx-border-color: #A9B1B8;     /* Warna border menjadi lebih jelas */
+}
+
+/* GAYA SAAT CHOICEBOX TERBUKA */
+.custom-choice-box .context-menu {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E5E7EB;
+}
+
+/* GAYA UNTUK SETIAP ITEM DI DALAM MENU DROPDOWN */
+.custom-choice-box .menu-item .label {
+    -fx-text-fill: #374151; /* Warna teks item */
+}
+
+/* GAYA UNTUK ITEM SAAT DISOROT (HOVER) */
+.custom-choice-box .menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+/* GAYA KHUSUS UNTUK TEXTFIELD DAN PASSWORDFIELD */
+.custom-text-field {
+    /* Ukuran dan Font */
+    -fx-pref-width: 149px;
+    -fx-pref-height: 25px;
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #374151;
+
+    /* Warna Latar Belakang (Dibuat lebih gelap) */
+    -fx-background-color: #E5E7EB; /* Sebelumnya: #F3F4F6 */
+
+    /* Border */
+    -fx-border-color: #D1D5DB;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+/* GAYA SAAT TEXTFIELD MENDAPAT FOKUS (DIKLIK) */
+.custom-text-field:focused {
+    -fx-border-color: #A78BFA;
+    -fx-effect: dropshadow(three-pass-box, rgba(167, 139, 250, 0.3), 5, 0, 0, 1);
+}
+
+
+/* GAYA KHUSUS UNTUK TOMBOL DENGAN TEMA YANG SAMA */
+.custom-button {
+    /* Ukuran */
+    -fx-padding: 10px 24px;
+
+    /* Tampilan & Desain (Dibuat lebih gelap) */
+    -fx-background-color: #D1D5DB; /* Sebelumnya: #E5E7EB */
+    -fx-text-fill: #374151;
+    -fx-border-color: transparent;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+
+    /* Tipografi */
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+/* EFEK HOVER UNTUK TOMBOL (Disesuaikan) */
+.custom-button:hover {
+    -fx-background-color: #BFC6CC; /* Sebelumnya: #DDE1E4 */
+}
+
+/* EFEK PRESSED UNTUK TOMBOL (Disesuaikan) */
+.custom-button:pressed {
+    -fx-background-color: #9E9E9E; /* Sebelumnya: #CED4DA */
+}
+
+.form-label {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4B5563; /* Warna abu-abu gelap agar kontras dan mudah dibaca */
+    -fx-padding: 0 0 5px 0; /* Memberi sedikit jarak (5px) di bawah label */
+}
+
+/* GAYA KHUSUS UNTUK TABLEVIEW */
+.custom-table-view {
+    /* Menghilangkan border luar default */
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+/* GAYA UNTUK HEADER KOLOM */
+.custom-table-view .column-header-background {
+    -fx-background-color: #F9FAFB; /* Warna latar header yang sangat terang */
+    -fx-border-color: #E5E7EB;
+    -fx-border-width: 0 0 2px 0; /* Hanya border bawah untuk header */
+}
+
+.custom-table-view .column-header .label {
+    -fx-text-fill: #374151; /* Warna teks header */
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
+
+/* GAYA UNTUK SETIAP BARIS (ROW) */
+.custom-table-view .table-row-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #F3F4F6;
+    -fx-border-width: 0 0 1px 0; /* Garis pemisah antar baris */
+    -fx-padding: 8px;
+}
+
+/* GAYA UNTUK BARIS SAAT DISOROT (HOVER) */
+.custom-table-view .table-row-cell:hover {
+    -fx-background-color: #F9FAFB;
+}
+
+/* GAYA UNTUK BARIS SAAT DIPILIH (SELECTED) */
+.custom-table-view .table-row-cell:selected {
+    -fx-background-color: #E5E7EB;
+}
+
+.custom-table-view .table-row-cell:selected .text {
+    -fx-fill: #1F2937;
+}
+
+/* GAYA UNTUK SCROLL BAR */
+.custom-table-view .scroll-bar:vertical,
+.custom-table-view .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.custom-table-view .scroll-bar .thumb {
+    -fx-background-color: #D1D5DB;
+    -fx-background-radius: 8px;
+}
+
+.custom-table-view .scroll-bar .track {
+    -fx-background-color: #F9FAFB;
+    -fx-background-radius: 8px;
+}
+
+.search-field {
+    /* Ukuran dan Font */
+    -fx-pref-height: 25px;
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #374151;
+
+    /* Warna Latar Belakang */
+    -fx-background-color: #F3F4F6;
+
+    /* Border */
+    -fx-border-color: #D1D5DB;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+/* GAYA SAAT SEARCH FIELD MENDAPAT FOKUS (DIKLIK) */
+.search-field:focused {
+    -fx-border-color: #A78BFA;
+    -fx-effect: dropshadow(three-pass-box, rgba(167, 139, 250, 0.3), 5, 0, 0, 1);
+}
+
+/* CLASS BARU UNTUK TOMBOL PENCARIAN (SEARCH) */
+.search-button {
+    -fx-pref-width: 30px;  /* Lebar spesifik untuk tombol ikon */
+    -fx-pref-height: 25px; /* Tinggi disamakan */
+    -fx-padding: 0;
+    -fx-background-color: #E5E7EB;
+    -fx-border-color: transparent;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.search-button:hover {
+    -fx-background-color: #DDE1E4;
+}
+
+.search-button:pressed {
+    -fx-background-color: #CED4DA;
+}

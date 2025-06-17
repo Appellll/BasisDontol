@@ -22,7 +22,7 @@
             </VBox>
             <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="318.0" mnemonicParsing="false" onAction="#OnLogoutClick" prefHeight="83.0" prefWidth="262.0" style="-fx-background-color: #FF6347;" styleClass="modern-button" stylesheets="@style/guru-styles.css" text="Logout" textFill="WHITE" />
             <Line endX="311.9999694824219" endY="48.9999885559082" startX="-1.52587890625E-5" startY="48.9999885559082" strokeWidth="2.0" />
-            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="207.0" mnemonicParsing="false" onAction="#OnInputNilaiClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Jadwal Mengajar" />
+            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="207.0" mnemonicParsing="false" onAction="#OnJadwalMengajarClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Jadwal Mengajar" />
             <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="85.0" mnemonicParsing="false" onAction="#OnInputNilaiClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Input Nilai Siswa" />
          </children>
       </AnchorPane>

@@ -74,6 +74,29 @@ public class GuruController {
     }
 
     @FXML
+    public void OnJadwalMengajarClick(ActionEvent actionEvent) {
+        try {
+            HelloApplication app = HelloApplication.getApplicationInstance();
+
+            // PERBAIKAN: Menggunakan HelloApplication.class.getResource untuk path yang konsisten
+            // dengan pemuat FXML lainnya dalam proyek ini.
+            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("guru-jadwal-view.fxml"));
+            Scene scene = new Scene(loader.load());
+
+            // Mengirim data user ke controller tujuan
+            GuruJadwalController jadwalController = loader.getController();
+            jadwalController.setUser(this.user);
+
+            app.getPrimaryStage().setScene(scene);
+            app.getPrimaryStage().setTitle("Jadwal Mengajar");
+
+        } catch (Exception e) { // Menangkap Exception yang lebih umum untuk mencakup NullPointerException
+            e.printStackTrace();
+            showAlert("Error", "Gagal memuat halaman jadwal mengajar. Pastikan file 'guru-jadwal-view.fxml' ada di lokasi yang benar.");
+        }
+    }
+
+    @FXML
     public void OnLogoutClick(ActionEvent actionEvent) {
         try {
             HelloApplication app = HelloApplication.getApplicationInstance();
