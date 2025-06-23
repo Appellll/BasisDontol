@@ -8,9 +8,12 @@ public class User {
     public String username;
     public String password;
     public String role;
-
-    // PERUBAHAN: Menyimpan NIP guru (String)
     private String nip;
+
+    // --- TAMBAHAN BARU UNTUK DATA SISWA ---
+    private String kelas;
+    private String tahunAjaran;
+    // ------------------------------------
 
     public User(ResultSet rs) throws SQLException {
         this.id = rs.getLong("id");
@@ -23,7 +26,10 @@ public class User {
         return username;
     }
 
-    // --- Getter dan Setter BARU untuk NIP ---
+    public long getId() {
+        return this.id;
+    }
+
     public String getNip() {
         return nip;
     }
@@ -31,4 +37,22 @@ public class User {
     public void setNip(String nip) {
         this.nip = nip;
     }
+
+    // --- METODE BARU UNTUK KELAS DAN TAHUN AJARAN ---
+    public String getKelas() {
+        return kelas;
+    }
+
+    public void setKelas(String kelas) {
+        this.kelas = kelas;
+    }
+
+    public String getTahunAjaran() {
+        return tahunAjaran;
+    }
+
+    public void setTahunAjaran(String tahunAjaran) {
+        this.tahunAjaran = tahunAjaran;
+    }
+    // ---------------------------------------------
 }
