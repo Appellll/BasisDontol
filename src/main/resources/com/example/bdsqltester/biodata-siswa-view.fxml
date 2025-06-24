@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.siswa.BiodataSiswaController">
+    <padding><Insets bottom="20.0" left="20.0" right="20.0" top="20.0" /></padding>
+    <children>
+        <Label text="Biodata Siswa"><font><Font name="System Bold" size="24.0" /></font></Label>
+        <GridPane hgap="10" vgap="10">
+            <columnConstraints><ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" /><ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="400.0" /></columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" /> <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" /> <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" /> <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" /> <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" /> <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Nama Lengkap" GridPane.rowIndex="0" /> <Label fx:id="namaLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label text="NIS" GridPane.rowIndex="1" /> <Label fx:id="nisLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Tempat, Tgl Lahir" GridPane.rowIndex="2" /> <Label fx:id="ttlLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Jenis Kelamin" GridPane.rowIndex="3" /> <Label fx:id="jkLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="Agama" GridPane.rowIndex="4" /> <Label fx:id="agamaLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Alamat" GridPane.rowIndex="5" /> <Label fx:id="alamatLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label text="No. Telepon" GridPane.rowIndex="6" /> <Label fx:id="telpLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Label text="Nama Ayah" GridPane.rowIndex="7" /> <Label fx:id="ayahLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Label text="Nama Ibu" GridPane.rowIndex="8" /> <Label fx:id="ibuLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            </children>
+        </GridPane>
+        <Button mnemonicParsing="false" onAction="#onBackClick" text="Kembali"><VBox.margin><Insets top="20.0" /></VBox.margin></Button>
+    </children>
+</VBox>

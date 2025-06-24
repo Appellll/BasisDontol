@@ -1,4 +1,4 @@
-package com.example.bdsqltester.scenes;
+package com.example.bdsqltester.scenes.guru;
 
 import com.example.bdsqltester.HelloApplication;
 import com.example.bdsqltester.datasources.MainDataSource;

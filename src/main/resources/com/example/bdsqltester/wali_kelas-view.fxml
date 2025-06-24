@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" stylesheets="@style/guru-styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.wali_kelas.WaliKelasController">
+   <children>
+      <Label fx:id="namaWaliKelasLabel" text="Selamat Datang, Wali Kelas!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onAbsenSiswaClick" prefHeight="50.0" prefWidth="250.0" styleClass="modern-button" text="Kelola Absensi Siswa" />
+            <Button mnemonicParsing="false" onAction="#onPrintRaporClick" prefHeight="50.0" prefWidth="250.0" styleClass="modern-button" text="Cetak Rapor Siswa" />
+            <Button mnemonicParsing="false" onAction="#onLogoutClick" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #f44336; -fx-text-fill: white;" text="Logout">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -7,23 +7,28 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="479.0" style="-fx-background-color: #D4E0E9;" stylesheets="@style/guru-styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.GuruController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="479.0" style="-fx-background-color: #F0F2F5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.guru.GuruController">
    <children>
       <AnchorPane layoutX="83.0" layoutY="53.0" prefHeight="430.0" prefWidth="313.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);">
          <children>
-            <VBox layoutX="10.0" layoutY="5.0" prefHeight="38.0" prefWidth="293.0">
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="44.0" prefWidth="293.0">
                <children>
-                  <Label fx:id="namaUser" prefHeight="28.0" prefWidth="277.0">
+                  <Label fx:id="namaUser" text="Halo, Nama Guru">
                      <font>
-                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                        <Font name="System Bold" size="24.0" />
                      </font>
                   </Label>
                </children>
             </VBox>
-            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="318.0" mnemonicParsing="false" onAction="#OnLogoutClick" prefHeight="83.0" prefWidth="262.0" style="-fx-background-color: #FF6347;" styleClass="modern-button" stylesheets="@style/guru-styles.css" text="Logout" textFill="WHITE" />
-            <Line endX="311.9999694824219" endY="48.9999885559082" startX="-1.52587890625E-5" startY="48.9999885559082" strokeWidth="2.0" />
-            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="207.0" mnemonicParsing="false" onAction="#OnJadwalMengajarClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Jadwal Mengajar" />
-            <Button blendMode="MULTIPLY" layoutX="7.0" layoutY="85.0" mnemonicParsing="false" onAction="#OnInputNilaiClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Input Nilai Siswa" />
+            <Line endX="293.0" layoutX="10.0" layoutY="56.0" startX="10.0" strokeWidth="2.0" />
+            <VBox alignment="CENTER" layoutX="21.0" layoutY="70.0" prefHeight="346.0" prefWidth="271.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onInputNilaiClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Input Nilai Siswa" />
+                  <Button mnemonicParsing="false" onAction="#onAbsenSiswaClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Absensi Wali Kelas" />
+                  <Button mnemonicParsing="false" onAction="#onPrintRaporClick" prefHeight="75.0" prefWidth="271.0" styleClass="modern-button" text="Rapor Wali Kelas" />
+                  <Button mnemonicParsing="false" onAction="#OnLogoutClick" prefHeight="50.0" prefWidth="271.0" style="-fx-background-color: #f44336;" text="Logout" textFill="WHITE" />
+               </children>
+            </VBox>
          </children>
       </AnchorPane>
    </children>

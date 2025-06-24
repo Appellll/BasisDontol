@@ -1,29 +1,22 @@
 package com.example.bdsqltester.dtos;
 
 import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 
 public class JadwalSiswa {
-    private final StringProperty hari;
-    private final StringProperty jam;
-    private final StringProperty mataPelajaran;
+    private final SimpleStringProperty hari;
+    private final SimpleStringProperty jam;
+    private final SimpleStringProperty mapel;
+    private final SimpleStringProperty guru;
 
-    public JadwalSiswa(String hari, String jamMulai, String jamSelesai, String mataPelajaran) {
+    public JadwalSiswa(String hari, String jam, String mapel, String guru) {
         this.hari = new SimpleStringProperty(hari);
-        this.jam = new SimpleStringProperty(jamMulai + " - " + jamSelesai);
-        this.mataPelajaran = new SimpleStringProperty(mataPelajaran);
+        this.jam = new SimpleStringProperty(jam);
+        this.mapel = new SimpleStringProperty(mapel);
+        this.guru = new SimpleStringProperty(guru);
     }
 
-    // Getter untuk setiap property (diperlukan oleh TableView)
-    public StringProperty hariProperty() {
-        return hari;
-    }
-
-    public StringProperty jamProperty() {
-        return jam;
-    }
-
-    public StringProperty mataPelajaranProperty() {
-        return mataPelajaran;
-    }
+    public SimpleStringProperty hariProperty() { return hari; }
+    public SimpleStringProperty jamProperty() { return jam; }
+    public SimpleStringProperty mapelProperty() { return mapel; }
+    public SimpleStringProperty guruProperty() { return guru; }
 }

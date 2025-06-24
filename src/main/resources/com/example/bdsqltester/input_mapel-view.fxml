@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="371.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.admin.InputMapelController">
+   <children>
+      <TableView fx:id="mapelList" layoutX="47.0" layoutY="82.0" prefHeight="235.0" prefWidth="245.0">
+        <columns>
+          <TableColumn fx:id="mapelTable" prefWidth="101.33331680297852" text="Mapel" />
+          <TableColumn fx:id="guruTable" prefWidth="100.6666259765625" text="Guru" />
+            <TableColumn fx:id="kkmTable" prefWidth="42.66667175292969" text="KKM" />
+        </columns>
+      </TableView>
+      <Label layoutX="173.0" layoutY="14.0" text="Input Mapel">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="90.0" text="Mapel" />
+      <TextField fx:id="mapelField" layoutX="300.0" layoutY="107.0" />
+      <Label layoutX="300.0" layoutY="132.0" text="Guru" />
+      <TextField fx:id="guruField" layoutX="300.0" layoutY="149.0" />
+      <TextField fx:id="kkmField" layoutX="300.0" layoutY="191.0" />
+      <Label layoutX="300.0" layoutY="174.0" text="KKM" />
+      <TextField fx:id="searchField" layoutX="47.0" layoutY="57.0" prefHeight="25.0" prefWidth="91.0" />
+      <Button layoutX="139.0" layoutY="57.0" mnemonicParsing="false" onAction="#onSearchClick" text="🔍" />
+      <Button layoutX="237.0" layoutY="56.0" mnemonicParsing="false" onAction="#onRefreshClick" text="Refresh" />
+      <Button layoutX="411.0" layoutY="228.0" mnemonicParsing="false" onAction="#onAddClick" text="Add" />
+      <Button layoutX="366.0" layoutY="228.0" mnemonicParsing="false" onAction="#onSaveClick" text="Save" />
+      <Button layoutX="302.0" layoutY="228.0" mnemonicParsing="false" onAction="#onRemoveClick" text="Remove" />
+      <Button layoutX="393.0" layoutY="306.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="36.0" prefWidth="59.0" text="Back" />
+   </children>
+</AnchorPane>

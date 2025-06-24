@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="462.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.admin.InputSiswaController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="58.0" prefHeight="382.0" prefWidth="703.0">
+         <children>
+            <TextField fx:id="namaField" layoutX="19.0" layoutY="268.0" />
+            <Label layoutX="264.0" layoutY="247.0" text="Tahun Ajaran" />
+            <Label layoutX="187.0" layoutY="301.0" text="Semester" />
+            <Label layoutX="426.0" layoutY="259.0" text="Akademis/Non-Akademis" />
+            <Label layoutX="573.0" layoutY="259.0" text="Keringanan" />
+            <Label layoutX="526.0" layoutY="238.0" text="Beasiswa" />
+            <Label layoutX="19.0" layoutY="247.0" text="Nama" />
+            <Label layoutX="19.0" layoutY="301.0" text="NIS" />
+            <Label layoutX="187.0" layoutY="247.0" text="Tingkat" />
+            <TextField fx:id="nisField" layoutX="19.0" layoutY="318.0" />
+            <ChoiceBox fx:id="tingkatBox" layoutX="187.0" layoutY="268.0" prefHeight="25.0" prefWidth="60.0" />
+            <ChoiceBox fx:id="semesterBox" layoutX="187.0" layoutY="318.0" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="tahunField" layoutX="264.0" layoutY="268.0" />
+            <ChoiceBox fx:id="akademisBox" layoutX="464.0" layoutY="280.0" prefHeight="25.0" prefWidth="60.0" />
+            <ChoiceBox fx:id="keringananBox" layoutX="573.0" layoutY="280.0" prefHeight="25.0" prefWidth="60.0" />
+            <Button layoutX="614.0" layoutY="336.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="33.0" prefWidth="60.0" text="Back" />
+            <Button layoutX="333.0" layoutY="340.0" mnemonicParsing="false" onAction="#onAddClick" text="Add" />
+            <Button layoutX="279.0" layoutY="340.0" mnemonicParsing="false" onAction="#onSaveClick" text="Save" />
+            <Button layoutX="385.0" layoutY="340.0" mnemonicParsing="false" onAction="#onRemoveClick" text="Remove" />
+            <TableView fx:id="siswaTable" layoutX="18.0" layoutY="31.0" prefHeight="200.0" prefWidth="667.0">
+              <columns>
+                <TableColumn fx:id="nisList" prefWidth="75.0" text="NIS" />
+                <TableColumn fx:id="namaList" prefWidth="156.66669464111328" text="Nama" />
+                  <TableColumn fx:id="tahunList" prefWidth="116.6666259765625" text="Tahun Ajaran" />
+                  <TableColumn fx:id="tingkatList" prefWidth="54.0" text="Tingkat" />
+                  <TableColumn fx:id="semesterList" prefWidth="72.66665649414062" text="Semester" />
+                  <TableColumn prefWidth="190.00002034505212" text="Beasiswa">
+                     <columns>
+                        <TableColumn fx:id="akademisList" prefWidth="115.333251953125" text="Akademis/Non-Akademis" />
+                        <TableColumn fx:id="keringananList" prefWidth="75.3333740234375" text="Keringanan" />
+                     </columns>
+                  </TableColumn>
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="27.0" layoutY="8.0" prefHeight="33.0" prefWidth="667.0" text="Input Siswa">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

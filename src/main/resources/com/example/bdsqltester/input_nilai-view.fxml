@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="490.0" prefWidth="728.0" stylesheets="@style/login-styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.InputNilaiController">
+<AnchorPane prefHeight="490.0" prefWidth="728.0" stylesheets="@style/login-styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.guru.InputNilaiController">
    <children>
       <TableView fx:id="tableNilai" layoutX="18.0" layoutY="59.0" prefHeight="249.0" prefWidth="691.0" styleClass="custom-table-view">
         <columns>

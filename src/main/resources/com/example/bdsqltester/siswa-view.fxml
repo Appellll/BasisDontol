@@ -6,34 +6,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="500.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: #e0e8f0; -fx-padding: 20;" stylesheets="@style/siswa-styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.SiswaController">
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0" spacing="15.0" stylesheets="@style/guru-styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.siswa.SiswaController">
     <children>
-        <VBox alignment="CENTER" prefHeight="450.0" prefWidth="320.0" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-padding: 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);">
+        <Label fx:id="namaSiswaLabel" text="Selamat Datang, Siswa!">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <VBox alignment="CENTER" spacing="15.0">
             <children>
-                <Label fx:id="namaSiswaLabel" text="Halo, Siswa! 👋">
-                    <font>
-                        <Font name="System Bold" size="28.0" />
-                    </font>
-                </Label>
-
-                <Label fx:id="kelasLabel" text="Memuat data kelas..." textFill="#6b7280">
-                    <font>
-                        <Font name="System Italic" size="14.0" />
-                    </font>
+                <Button mnemonicParsing="false" onAction="#onLihatBiodataClick" prefHeight="50.0" prefWidth="250.0" styleClass="modern-button" text="Lihat Biodata" />
+                <Button mnemonicParsing="false" onAction="#onLihatSppClick" prefHeight="50.0" prefWidth="250.0" styleClass="modern-button" text="Status SPP" />
+                <Button mnemonicParsing="false" onAction="#onLihatJadwalClick" prefHeight="50.0" prefWidth="250.0" styleClass="modern-button" text="Jadwal Pelajaran" />
+                <Button mnemonicParsing="false" onAction="#onLihatNilaiClick" prefHeight="50.0" prefWidth="250.0" styleClass="modern-button" text="Lihat Nilai" />
+                <Button mnemonicParsing="false" onAction="#onLihatRaporClick" prefHeight="50.0" prefWidth="250.0" styleClass="modern-button" text="Lihat Rapor" />
+                <Button mnemonicParsing="false" onAction="#onLogoutClick" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #f44336; -fx-text-fill: white;" text="Logout">
                     <VBox.margin>
-                        <Insets bottom="10.0" />
-                    </VBox.margin>
-                </Label>
-
-                <Button onAction="#onBiodataClick" prefWidth="250.0" styleClass="menu-button-light" text="Biodata" />
-                <Button onAction="#onJadwalClick" prefWidth="250.0" styleClass="menu-button-light" text="Jadwal Kelas" />
-                <Button onAction="#onNilaiClick" prefWidth="250.0" styleClass="menu-button-light" text="Nilai Ujian" />
-                <Button onAction="#onLogoutClick" prefWidth="250.0" styleClass="logout-button-solid" text="Logout">
-                    <VBox.margin>
-                        <Insets top="15.0" />
+                        <Insets top="20.0" />
                     </VBox.margin>
                 </Button>
             </children>
         </VBox>
     </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
 </VBox>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="453.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.admin.InputBiodataController">
+   <children>
+      <TableView fx:id="siswaList" layoutX="32.0" layoutY="95.0" prefHeight="327.0" prefWidth="161.0">
+        <columns>
+          <TableColumn fx:id="namaList" prefWidth="87.33330917358398" text="Nama" />
+          <TableColumn fx:id="nisList" prefWidth="73.33332061767578" text="NIS" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="208.0" layoutY="62.0" prefHeight="327.0" prefWidth="377.0">
+         <children>
+            <Label layoutX="192.0" layoutY="14.0" prefHeight="28.0" prefWidth="70.0" text="Ibu" />
+            <Label layoutX="192.0" layoutY="118.0" prefHeight="28.0" prefWidth="70.0" text="Alamat" />
+            <Label layoutX="10.0" layoutY="171.0" prefHeight="28.0" prefWidth="70.0" text="Jenis kelamin" />
+            <Label layoutX="10.0" layoutY="14.0" prefHeight="28.0" prefWidth="70.0" text="Nama" />
+            <Label layoutX="10.0" layoutY="65.0" prefHeight="28.0" prefWidth="70.0" text="NIS" />
+            <Label layoutX="10.0" layoutY="118.0" prefHeight="28.0" prefWidth="70.0" text="Tanggal lahir" />
+            <Label layoutX="196.0" layoutY="171.0" prefHeight="28.0" prefWidth="131.0" text="No. Telepon Orang Tua" />
+            <Label layoutX="192.0" layoutY="65.0" prefHeight="28.0" prefWidth="70.0" text="Ayah" />
+            <TextField fx:id="namaField" layoutX="10.0" layoutY="42.0" />
+            <TextField fx:id="nisField" layoutX="10.0" layoutY="93.0" />
+            <DatePicker fx:id="tanggalField" layoutX="10.0" layoutY="146.0" prefHeight="25.0" prefWidth="149.0" />
+            <ChoiceBox fx:id="genderBox" layoutX="10.0" layoutY="199.0" prefWidth="150.0" />
+            <TextField fx:id="phoneField" layoutX="192.0" layoutY="199.0" />
+            <TextField fx:id="ibuField" layoutX="192.0" layoutY="42.0" />
+            <TextField fx:id="ayahField" layoutX="192.0" layoutY="93.0" />
+            <TextField fx:id="alamatField" layoutX="192.0" layoutY="146.0" text="Jl." />
+            <Button layoutX="187.0" layoutY="247.0" mnemonicParsing="false" onAction="#onSaveClick" prefHeight="35.0" prefWidth="61.0" text="Save" />
+            <Button layoutX="279.0" layoutY="247.0" mnemonicParsing="false" onAction="#onAddClick" prefHeight="35.0" prefWidth="61.0" text="Add" />
+            <Label layoutX="10.0" layoutY="224.0" prefHeight="28.0" prefWidth="70.0" text="Agama" />
+            <ChoiceBox fx:id="agamaBox" layoutX="10.0" layoutY="252.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="39.0" layoutY="14.0" prefHeight="46.0" prefWidth="521.0" text="Input Biodata Siswa">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchnamaField" layoutX="34.0" layoutY="67.0" prefHeight="25.0" prefWidth="70.0" promptText="Nama" />
+      <TextField fx:id="searchnisField" layoutX="104.0" layoutY="67.0" prefHeight="25.0" prefWidth="53.0" promptText="NIS" />
+      <Button layoutX="157.0" layoutY="67.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="25.0" prefWidth="35.0" text="🔍" />
+      <Button layoutX="208.0" layoutY="386.0" mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="35.0" prefWidth="61.0" text="Delete" />
+      <Button layoutX="491.0" layoutY="386.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="35.0" prefWidth="61.0" text="Back" />
+   </children>
+</AnchorPane>

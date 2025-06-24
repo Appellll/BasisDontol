@@ -1,33 +1,41 @@
 package com.example.bdsqltester.dtos;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 public class User {
-    public long id;
+    // Ubah id menjadi String untuk mengakomodasi NIP/NIS
+    public String id;
     public String username;
-    public String password;
     public String role;
     private String nip;
+    private boolean isWaliKelas = false;
 
-    // --- TAMBAHAN BARU UNTUK DATA SISWA ---
-    private String kelas;
-    private String tahunAjaran;
-    // ------------------------------------
-
-    public User(ResultSet rs) throws SQLException {
-        this.id = rs.getLong("id");
-        this.username = rs.getString("username");
-        this.password = rs.getString("password");
-        this.role = rs.getString("role");
+    // Konstruktor kosong
+    public User() {
     }
+
+    // --- Getters dan Setters ---
 
     public String getUsername() {
         return username;
     }
 
-    public long getId() {
-        return this.id;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getNip() {
@@ -38,21 +46,11 @@ public class User {
         this.nip = nip;
     }
 
-    // --- METODE BARU UNTUK KELAS DAN TAHUN AJARAN ---
-    public String getKelas() {
-        return kelas;
+    public boolean isWaliKelas() {
+        return isWaliKelas;
     }
 
-    public void setKelas(String kelas) {
-        this.kelas = kelas;
+    public void setWaliKelas(boolean waliKelas) {
+        isWaliKelas = waliKelas;
     }
-
-    public String getTahunAjaran() {
-        return tahunAjaran;
-    }
-
-    public void setTahunAjaran(String tahunAjaran) {
-        this.tahunAjaran = tahunAjaran;
-    }
-    // ---------------------------------------------
 }

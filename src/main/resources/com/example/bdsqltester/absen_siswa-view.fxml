@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdsqltester.scenes.wali_kelas.AbsenSiswaController">
+   <children>
+      <TableView fx:id="absenList" layoutX="124.0" layoutY="71.0" prefHeight="117.0" prefWidth="351.0">
+        <columns>
+          <TableColumn fx:id="tanggalList" prefWidth="88.0" text="Tanggal" />
+          <TableColumn fx:id="siswaList" prefWidth="93.33329772949219" text="Siswa" />
+            <TableColumn fx:id="guruList" prefWidth="92.6666259765625" text="Guru" />
+            <TableColumn fx:id="statusList" prefWidth="76.666748046875" text="Status" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="229.0" layoutY="23.0" text="Absen Siswa">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="231.0" text="Nama" />
+      <Label layoutX="250.0" layoutY="231.0" text="Status" />
+      <Label layoutX="85.0" layoutY="282.0" />
+      <TextField fx:id="namaField" layoutX="83.0" layoutY="256.0" />
+      <ChoiceBox fx:id="statusBox" layoutX="250.0" layoutY="256.0" prefWidth="150.0" />
+      <Button layoutX="362.0" layoutY="291.0" mnemonicParsing="false" onAction="#onAddClick" text="Add" />
+      <Button layoutX="305.0" layoutY="291.0" mnemonicParsing="false" onAction="#onSaveClick" text="Save" />
+      <Button layoutX="241.0" layoutY="291.0" mnemonicParsing="false" onAction="#onDeleteClick" text="Delete" />
+      <Button layoutX="500.0" layoutY="346.0" mnemonicParsing="false" onAction="#onBackClick" text="Back" />
+   </children>
+</AnchorPane>
